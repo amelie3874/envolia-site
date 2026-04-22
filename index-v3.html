@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envolia — Mieux vendre avec l'IA, sans perdre l'humain</title>
+  <meta name="description"
+    content="J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage. 15 ans d'expertise sales B2B · Consultante IA · Lyon, Grenoble, Annecy · France.">
+
+  <!-- SEO -->
+  <link rel="canonical" href="https://envolia.fr/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Envolia — Mieux vendre avec l'IA, sans perdre l'humain">
+  <meta property="og:description" content="J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage. 15 ans d'expertise sales B2B. Consultante IA. Lyon, Grenoble, Annecy.">
+  <meta property="og:url" content="https://envolia.fr/">
+  <meta property="og:site_name" content="Envolia">
+  <meta property="og:image" content="https://envolia.fr/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Envolia — Mieux vendre avec l'IA, sans perdre l'humain">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Envolia — Mieux vendre avec l'IA, sans perdre l'humain">
+  <meta name="twitter:description" content="J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage. Consultante IA spécialisée ventes B2B.">
+  <meta name="twitter:image" content="https://envolia.fr/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300,0..1&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* CSS Variables & Design System - Ventes IA */
+    :root {
+      /* Colors */
+      --primary: #f9a500;
+      --primary-glow: rgba(249, 165, 0, 0.3);
+      --primary-soft: rgba(249, 165, 0, 0.1);
+      --on-primary: #1a1c19;
+      --background: #fafaf9;
+      --surface: #ffffff;
+      --surface-container: #f1f1ee;
+      --surface-container-low: #fafaf9;
+      --surface-container-high: #e8e8e5;
+      --on-surface: #1a1c19;
+      --on-surface-variant: #444440;
+      --outline: #d1d1cf;
+      --navy: #0f0f11;
+      --charcoal: #1c1c1e;
+      --white: #ffffff;
+
+      --alert-bg: #FFF8F6;
+      --alert: #C0392B;
+
+      /* Typography */
+      --font-display: 'Bricolage Grotesque', sans-serif;
+      --font-body: 'Inter', sans-serif;
+
+      /* Spacing */
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 6rem;
+      --space-xxl: 10rem;
+
+      /* Shadows */
+      --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      --shadow-card: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+      --shadow-premium: 0 30px 60px -12px rgba(0, 0, 0, 0.15);
+
+      /* Border Radius */
+      --radius-sm: 0.375rem;
+      --radius-md: 0.75rem;
+      --radius-lg: 1.25rem;
+      --radius-full: 9999px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--surface-container-low);
+      color: var(--on-surface);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      font-variant-numeric: tabular-nums proportional-nums;
+      font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Typography */
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-display {
+      font-family: var(--font-display);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 2rem;
+      color: var(--charcoal);
+    }
+
+    h3 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      margin-bottom: 1rem;
+      color: var(--charcoal);
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      color: var(--on-surface-variant);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    strong {
+      color: var(--on-surface);
+      font-weight: 800;
+    }
+
+    i,
+    em {
+      font-style: normal;
+    }
+
+    /* Design choice */
+
+    .text-caption {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-weight: 800;
+    }
+
+    .color-primary {
+      color: var(--primary);
+    }
+
+    /* Globals */
+    section {
+      padding: var(--space-xl) 0;
+    }
+
+    @media (min-width: 840px) {
+      section {
+        padding: var(--space-xxl) 0;
+      }
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--outline), transparent);
+      margin: var(--space-xl) 0;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      color: var(--navy);
+      padding: 1rem 2rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: var(--shadow-soft);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: var(--shadow-card);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 1rem 2rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      text-decoration: none;
+      transition: border-color 0.3s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--white);
+    }
+
+    /* Nav */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(209, 209, 207, 0.2);
+      padding: 1.25rem 0;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--on-surface);
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--on-surface-variant);
+      text-decoration: none;
+      font-size: 0.625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 640px) {
+      nav ul {
+        display: none;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      padding: 12rem 0 8rem;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      opacity: 0.2;
+      background-image: radial-gradient(var(--primary) 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
+      mask-image: linear-gradient(to bottom, black, transparent);
+      -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      color: var(--white);
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--primary);
+      font-family: var(--font-display);
+      font-weight: 300;
+    }
+
+    .hero .subtitle {
+      font-size: clamp(1.25rem, 2vw, 1.5rem);
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 900;
+      background: var(--primary-soft);
+      color: var(--primary);
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      border: 1px solid rgba(249, 165, 0, 0.3);
+      box-shadow: 0 10px 30px var(--primary-glow);
+    }
+
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* Sections */
+    .section-alert {
+      background: var(--surface-container-high);
+    }
+
+    .section-alert h2 {
+      color: var(--charcoal);
+    }
+
+    .section-problem {
+      background: var(--white);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 640px) {
+      .problem-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .problem-card {
+      background: rgba(0, 0, 0, 0.03);
+      padding: 2.5rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--outline);
+    }
+
+    .conviction {
+      border-left: 3px solid var(--primary);
+      padding-left: 2rem;
+      margin: 3rem 0 0;
+      font-size: 1.5rem;
+      font-family: var(--font-display);
+      font-style: italic;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    /* Profil */
+    .profil {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin: 4rem 0 0;
+      padding: 2.5rem;
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(209, 209, 207, 0.3);
+      box-shadow: var(--shadow-card);
+    }
+
+    .profil-photo {
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+      background: var(--surface-container-high);
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .profil-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 640px) {
+      .profil {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      padding: 2rem 0;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--on-surface-variant);
+      opacity: 0.6;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* Cards & Grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-top: 3rem;
+    }
+
+    @media (min-width: 640px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(209, 209, 207, 0.3);
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card ul {
+      list-style: none;
+      margin: 2rem 0;
+    }
+
+    .card ul li {
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      position: relative;
+      font-size: 1rem;
+      color: var(--on-surface-variant);
+    }
+
+    .card ul li::before {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--primary);
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 1.1rem;
+    }
+
+    .card .ideal {
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      margin-top: auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--outline);
+      font-weight: 700;
+    }
+
+    .photo-bandeau {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-top: 2rem;
+      box-shadow: var(--shadow-premium);
+      background: var(--surface-container-high);
+      aspect-ratio: 21/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .photo-bandeau img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .logos-bar {
+      margin-top: 2rem;
+    }
+
+    .logos-bar img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+
+    .logos-bar img:hover {
+      opacity: 1;
+    }
+
+    .pont {
+      background: var(--primary-soft);
+      border-radius: var(--radius-sm);
+      padding: 3rem;
+      margin-top: 3rem;
+      border: 2px solid rgba(249, 165, 0, 0.3);
+    }
+
+    .pont h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .pont-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+
+    .metric {
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 3rem;
+      font-family: var(--font-display);
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    /* Avant / Après */
+    .ba-card {
+      padding: 3rem;
+      border-radius: var(--radius-sm);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid rgba(209, 209, 207, 0.3);
+    }
+
+    .ba-card.avant {
+      background: var(--white);
+      color: var(--on-surface-variant);
+      box-shadow: var(--shadow-card);
+    }
+
+    .ba-card.apres {
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.85);
+      box-shadow: var(--shadow-premium);
+    }
+
+    .ba-label {
+      font-size: 0.6875rem;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .ba-card.avant .ba-label {
+      color: var(--on-surface-variant);
+      opacity: 0.5;
+    }
+
+    .ba-card.apres .ba-label {
+      color: var(--primary);
+    }
+
+    /* Bandeau crédibilité hero */
+    .cred-bandeau {
+      background: var(--white);
+      padding: 4rem 0;
+      border-bottom: 1px solid rgba(209, 209, 207, 0.3);
+    }
+
+    .cred-bandeau .container {
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .cred-bandeau p {
+      font-size: clamp(1.125rem, 2vw, 1.5rem);
+      color: var(--on-surface);
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .cred-bandeau strong.number {
+      font-family: var(--font-display);
+      font-weight: 500;
+      color: var(--primary);
+      font-size: 1.15em;
+      letter-spacing: -0.01em;
+    }
+
+    .cred-bandeau p.cred-institutional {
+      display: inline-block;
+      font-size: 0.65rem !important;
+      font-weight: 900;
+      background: var(--primary-soft);
+      color: var(--primary);
+      padding: 0.5rem 1.2rem;
+      border-radius: var(--radius-full);
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      border: 1px solid rgba(249, 165, 0, 0.3);
+      box-shadow: 0 10px 30px var(--primary-glow);
+    }
+
+    /* Section Sprints */
+    .section-sprints {
+      background: var(--white);
+    }
+
+    .sprints-intro {
+      max-width: 760px;
+      margin: 0 auto 4rem;
+      text-align: center;
+    }
+
+    .sprints-intro p {
+      font-size: clamp(1.125rem, 2vw, 1.375rem);
+      color: var(--on-surface-variant);
+      margin-bottom: 1rem;
+    }
+
+    .sprints-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 840px) {
+      .sprints-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .sprint-card {
+      background: var(--surface-container-low);
+      border: 1px solid rgba(209, 209, 207, 0.5);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s;
+    }
+
+    .sprint-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .sprint-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sprint-num {
+      font-family: var(--font-display);
+      font-size: 0.45em;
+      color: var(--primary);
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-right: 0.5em;
+      vertical-align: 0.3em;
+      display: inline-block;
+    }
+
+    .sprint-name {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      color: var(--charcoal);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .sprint-subtitle {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.125rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .sprint-block {
+      margin-bottom: 1.75rem;
+    }
+
+    .sprint-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .sprint-label {
+      font-size: 0.6875rem;
+      font-weight: 900;
+      color: var(--on-surface-variant);
+      opacity: 0.6;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .sprint-douleur {
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--on-surface-variant);
+      opacity: 0.85;
+      padding: 0.25rem 0 0.25rem 1rem;
+      border-left: 2px solid rgba(209, 209, 207, 0.8);
+      line-height: 1.5;
+    }
+
+    .sprint-livrable {
+      font-size: 1rem;
+      color: var(--on-surface);
+      line-height: 1.6;
+    }
+
+    .sprint-livrable p {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .sprint-livrable p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sprint-roi {
+      margin-top: auto;
+      padding: 1.75rem 1.75rem;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: var(--radius-sm);
+      font-size: 1.0625rem;
+      font-weight: 600;
+      line-height: 1.5;
+      box-shadow: var(--shadow-card);
+    }
+
+    .sprint-roi-label {
+      display: block;
+      font-size: 0.6875rem;
+      font-weight: 900;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Sprint details — dépliable mobile, ouvert desktop */
+    .sprint-details {
+      border: none;
+    }
+
+    .sprint-toggle {
+      display: none;
+    }
+
+    .sprint-details-content {
+      display: block !important;
+    }
+
+    @media (max-width: 839px) {
+      .sprint-details {
+        border: none;
+      }
+
+      .sprint-details:not([open]) .sprint-details-content {
+        display: none !important;
+      }
+
+      .sprint-details[open] .sprint-details-content {
+        display: block !important;
+      }
+
+      .sprint-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        font-size: 0.75rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--primary);
+        padding: 0.75rem 1.25rem;
+        background: var(--primary-soft);
+        border: 1px solid rgba(249, 165, 0, 0.25);
+        border-radius: var(--radius-full);
+        margin: 0 auto;
+        list-style: none;
+        transition: background 0.2s;
+      }
+
+      .sprint-toggle:hover {
+        background: rgba(249, 165, 0, 0.15);
+      }
+
+      .sprint-toggle::-webkit-details-marker {
+        display: none;
+      }
+
+      .sprint-toggle .toggle-icon::after {
+        content: " ↓";
+      }
+
+      .sprint-details[open] .sprint-toggle .toggle-icon::after {
+        content: " ↑";
+      }
+
+      .sprint-details[open] .sprint-toggle {
+        margin-bottom: 1.5rem;
+      }
+
+      .sprint-details:not([open]) {
+        /* Remove the open attribute on mobile load */
+      }
+    }
+
+    .sprint-surmesure {
+      margin-top: 3rem;
+      padding: 2rem 2.5rem;
+      background: var(--primary-soft);
+      border: 1px dashed rgba(249, 165, 0, 0.4);
+      border-radius: var(--radius-sm);
+      text-align: center;
+    }
+
+    .sprint-surmesure p {
+      font-size: 1.0625rem;
+      color: var(--on-surface);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* Section Besoin différent */
+    .besoin-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .besoin-item {
+      padding: 1.75rem 2rem;
+      background: var(--white);
+      border: 1px solid rgba(209, 209, 207, 0.4);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--primary);
+    }
+
+    .besoin-item h4 {
+      font-family: var(--font-body);
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+    }
+
+    .besoin-item p {
+      font-size: 1rem;
+      color: var(--on-surface-variant);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    /* Bridge newsletter */
+    .section-newsletter-bridge {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .section-newsletter-bridge h2 {
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .section-newsletter-bridge p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.125rem;
+      max-width: 620px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .section-newsletter-bridge .btn-primary {
+      background: var(--primary);
+    }
+
+    /* Témoignages */
+    .testimonials {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .testimonial {
+      background: var(--white);
+      border: 1px solid rgba(209, 209, 207, 0.3);
+      border-radius: var(--radius-sm);
+      padding: 2.5rem;
+      font-size: 1.125rem;
+      font-weight: 500;
+      font-family: var(--font-body);
+      color: var(--on-surface-variant);
+      box-shadow: var(--shadow-card);
+    }
+
+    .testimonial .author {
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 800;
+      color: var(--charcoal);
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .testimonial .author::before {
+      content: "";
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+
+    .section-warm {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .section-warm h2 {
+      color: var(--white);
+    }
+
+    .section-warm p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* Formulaire */
+    .cta-section {
+      background: var(--white);
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-section {
+      background: var(--surface-container-high);
+      border-top: 1px solid rgba(209, 209, 207, 0.2);
+    }
+
+    .form-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--white);
+      padding: 4rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-premium);
+    }
+
+    .form-intro {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .form-row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-field label {
+      font-size: 0.6875rem;
+      font-weight: 900;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .form-field input,
+    .form-field textarea {
+      padding: 1.25rem;
+      border: 1px solid var(--outline);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 1rem;
+      background: var(--surface-container-low);
+      color: var(--charcoal);
+      transition: border-color 0.3s;
+      outline: none;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+      border-color: var(--primary);
+      background: var(--white);
+    }
+
+    .form-field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-field .optional {
+      color: var(--on-surface-variant);
+      opacity: 0.5;
+      font-size: 0.6875rem;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 500;
+      margin-left: 0.5rem;
+    }
+
+    .form-note {
+      font-size: 0.75rem;
+      color: var(--on-surface-variant);
+      text-align: center;
+      margin-top: 1.5rem;
+      font-weight: 500;
+    }
+
+    footer {
+      background: var(--navy);
+      padding: 6rem 0;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    footer a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 600px) {
+      .stat-hero {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 1rem !important;
+      }
+      .stat-hero span {
+        font-size: 5rem !important;
+      }
+      .stat-hero h2 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a href="/" class="logo"><img src="logo-envolia-nav.png" alt="Envolia" style="height: 32px; width: auto; vertical-align: middle; margin-right: 0.5rem;">Envolia</a>
+      <ul>
+        <li><a href="#approche">Approche</a></li>
+        <li><a href="#sprints">Sprints</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>Mieux vendre avec l'IA.<br><span>Sans perdre l'humain.</span></h1>
+      <p class="subtitle">J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage, pour qu'ils se concentrent sur ce qui fait vendre : parler à leurs clients.</p>
+      <div class="cta-group">
+        <a href="#contact" class="btn-primary">Évaluer ma maturité IA en 2 min</a>
+        <a href="#rappel" class="btn-secondary">Être rappelé</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BANDEAU CRÉDIBILITÉ -->
+  <section class="cred-bandeau">
+    <div class="container">
+      <p>J'ai co-conçu <a href="https://www.alpesinnovation.fr/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PhonePlus CRM</a>, utilisé par <strong class="number">1 000+&nbsp;commerciaux</strong> au quotidien. <strong class="number">15&nbsp;ans</strong> à observer, mesurer et encoder ce qui fait vraiment vendre.</p>
+      <p class="cred-institutional">Formée à l'IA par un organisme certifié Qualiopi (184h) · Formée à l'usage sécurisé de l'IA</p>
+    </div>
+  </section>
+
+  <!-- SHADOW AI COMMERCIAL -->
+  <section class="section-alert">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <h2>Vos commerciaux utilisent déjà l'IA. Vos clients aussi.</h2>
+      <p class="text-h3" style="font-weight: 700; margin-bottom: 2rem;">75% des employés de bureau utilisent l'IA au travail. La plupart avec leurs propres outils, hors de tout contrôle.</p>
+      <p>Vos commerciaux écrivent leurs mails, préparent leurs rendez-vous, rédigent leurs comptes-rendus, relancent leurs prospects avec ChatGPT. Vos données clients, votre savoir-faire, votre image de marque partent dans des systèmes que vous ne maîtrisez pas.</p>
+      <p
+        style="font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.5; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;">
+        Source : Microsoft & LinkedIn 2024 Work Trend Index</p>
+    </div>
+  </section>
+
+  <!-- TWIST ACHETEUR -->
+  <section style="background: var(--white); padding-bottom: 3rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="text-align: center;">Et du côté de vos acheteurs, c'est exactement la même chose.</h2>
+      <p style="font-size: 1.25rem;">Vos prospects arrivent en rendez-vous après avoir comparé vos offres avec une IA. Ils ont préparé leurs objections avec une IA. Ils ont demandé à une IA si votre prix était dans le marché.</p>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--charcoal); font-family: var(--font-display); line-height: 1.3; margin-top: 2rem;">Le commercial qui n'utilise pas l'IA n'est plus en retard sur son outil. Il est en retard sur son acheteur.</p>
+      <p style="font-size: 1.125rem; margin-top: 2rem; font-style: italic;">Vous ne pouvez plus dire « on n'a pas commencé ». Vous pouvez encore décider comment vous y allez.</p>
+    </div>
+  </section>
+
+  <!-- 80% D'ÉCHEC -->
+  <section class="section-problem" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="container">
+      <div class="stat-hero" style="display: flex; gap: 2rem; align-items: baseline; justify-content: center; margin-bottom: 3rem;">
+        <span
+          style="font-size: 8rem; font-family: var(--font-display); color: var(--primary); line-height: 0.9;">80%</span>
+        <h2 style="margin: 0; max-width: 400px; line-height: 1.1;">des projets IA échouent.<br><span
+            style="opacity:0.4;">Rarement à cause de la technologie. Essentiellement pour les deux mêmes raisons.</span></h2>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <h4
+            style="font-family: var(--font-body); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.75rem;">
+            <span class="material-symbols-outlined color-primary">groups</span> L'humain.</h4>
+          <p>On achète des licences sans accompagner le changement. Les équipes testent, sont déçues, et abandonnent.
+          </p>
+        </div>
+        <div class="problem-card">
+          <h4
+            style="font-family: var(--font-body); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.75rem;">
+            <span class="material-symbols-outlined color-primary">account_tree</span> Le process.</h4>
+          <p>On plaque l'IA sur des process flous ou cassés. On automatise avant de structurer. L'IA amplifie le chaos
+            au lieu de le résoudre.</p>
+        </div>
+      </div>
+
+      <div
+        style="background: var(--navy); color: var(--white); padding: 3rem; border-radius: var(--radius-sm); margin-top: 3rem; text-align: center; box-shadow: var(--shadow-premium);">
+        <p style="color: var(--white); font-size: 1.25rem;">Pour 1€ investi dans la technologie IA, il en faudrait 9 en
+          accompagnement humain et en process. La plupart des entreprises font l'inverse.</p>
+      </div>
+      <p
+        style="font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.5; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; text-align: center;">
+        Sources : MIT Sloan Management Review, BCG 2024</p>
+      <p style="text-align: center; font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.5rem); color: var(--charcoal); margin-top: 4rem; font-weight: 400; letter-spacing: -0.02em;">C'est exactement là que j'interviens.</p>
+    </div>
+  </section>
+
+  <!-- APPROCHE -->
+  <section id="approche" style="background: var(--surface-container-low); border-top: 1px solid rgba(209,209,207,0.2); padding-top: 3rem;">
+    <div class="container">
+      <h2>15 ans à résoudre ces deux problématiques</h2>
+      <div style="column-count: 1; gap: 4rem; max-width: 800px;">
+        <p><strong>Le process :</strong> j'ai co-conçu <a href="https://www.alpesinnovation.fr/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PhonePlus CRM</a> en observant les meilleurs commerciaux de mes clients. Nous avons intégré leur process dans l'outil. Résultat : <strong>+30% de conversion</strong>, pas parce que l'outil est magique, mais parce que le process est bon.</p>
+        <p><strong>L'adoption :</strong> j'ai formé les équipes à l'utiliser. Soulager plutôt qu'alourdir. Y aller par petites touches.</p>
+        <p>Aujourd'hui, je fais la même chose avec l'IA : j'encode ma méthode dans des assistants configurés pour vos équipes, pour que l'adoption tienne et que le ROI suive.</p>
+        <p class="conviction">« D'abord l'humain,<br>ensuite le process,<br>enfin l'outil. »</p>
+      </div>
+
+      <!-- PROFIL -->
+      <div class="profil">
+        <div class="profil-photo"><img src="amelie-marrone-envolia.jpg" alt="Amélie Marrone, consultante IA" loading="lazy" decoding="async"></div>
+        <div>
+          <p class="text-caption color-primary" style="margin-bottom: 0.5rem;">Amélie Marrone, Consultante & formatrice IA · Auteure de la Newsletter <a href="https://www.ventes-ia.fr" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--primary);">"Mieux vendre avec l'IA, sans perdre l'humain"</a></p>
+          <p style="font-size: 1.125rem;">Je ne me suis pas lancée dans l'IA parce que c'est à la mode. Mais parce que j'ai vu arriver le même problème que j'ai résolu pendant 15 ans : comment faire qu'un outil soit réellement adopté et rentable. J'ai créé Envolia pour mettre cette expérience au service des entreprises, et leur éviter les pièges qui empêchent l'IA de produire de vrais résultats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LES 4 SPRINTS -->
+  <section id="sprints" class="section-sprints">
+    <div class="container">
+      <div class="sprints-intro">
+        <p class="text-caption color-primary" style="margin-bottom: 1rem;">Ateliers d'implémentation de cas d'usage IA</p>
+        <h2>Les Sprints d'implémentation.<br><span style="font-family: var(--font-display); font-weight: 300; color: var(--on-surface-variant); font-size: 0.6em; letter-spacing: -0.01em;">Généralement sur 1 journée.</span></h2>
+        <p>Je crée avec vous un système IA sur mesure : assistant, agent ou workflow, configuré sur votre méthode et vos données.</p>
+        <p style="font-style: italic; color: var(--primary); font-family: var(--font-display); font-size: clamp(1.125rem, 2vw, 1.375rem);">Des assistants qui simplifient la vie de vos commerciaux, pas des robots qui les remplacent.</p>
+        <p>Mon rôle commence par vous aider à identifier par quoi on débute pour débloquer votre équipe.</p>
+      </div>
+
+      <div class="sprints-grid">
+
+        <!-- SPRINT SIGNAUX -->
+        <div class="sprint-card">
+          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> SIGNAUX</h3>
+          <p class="sprint-subtitle">Des comptes à activer chaque matin, pas des listes à éplucher chaque semaine.</p>
+          <details class="sprint-details" open>
+            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
+            <div class="sprint-details-content">
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'entends</span>
+                <p class="sprint-douleur">« Mes commerciaux prospectent dans le vide. Ils appellent des entreprises au hasard, au mauvais moment, avec le mauvais angle. »</p>
+              </div>
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'installe</span>
+                <div class="sprint-livrable">
+                  <p>Chaque matin, vos commerciaux reçoivent une short-list de comptes qui viennent de bouger. Chaque compte arrive avec le bon angle d'approche.</p>
+                  <p>On définit ensemble les signaux qui comptent pour votre entreprise : changements de direction, levées de fonds, ouvertures d'agence, ou tout signal propre à votre secteur.</p>
+                </div>
+              </div>
+              <div class="sprint-roi">
+                <span class="sprint-roi-label">Résultat</span>
+                Fin de la prospection dans le vide. Vos commerciaux appellent des entreprises qui ont une raison de vous répondre.
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- SPRINT CONTEXTE -->
+        <div class="sprint-card">
+          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> CONTEXTE</h3>
+          <p class="sprint-subtitle">Plus de recherche avant d'envoyer, d'appeler ou d'écrire. Vos commerciaux ouvrent la fiche et passent à l'action.</p>
+          <details class="sprint-details" open>
+            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
+            <div class="sprint-details-content">
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'entends</span>
+                <p class="sprint-douleur">« Mes commerciaux perdent 2 jours par semaine à faire des recherches sur leurs prospects. »</p>
+              </div>
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'installe</span>
+                <div class="sprint-livrable">
+                  <p>Un prospect à contacter ? On définit ensemble les informations à enrichir (actualités de l'entreprise, décideurs à cibler, signaux d'intérêt, angle d'approche…).</p>
+                  <p>Vos commerciaux obtiennent pour chaque prospect la note de contexte dont ils ont besoin pour agir.</p>
+                </div>
+              </div>
+              <div class="sprint-roi">
+                <span class="sprint-roi-label">Résultat</span>
+                15 minutes gagnées par contact. Vos commerciaux passent le temps récupéré à vendre.
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- SPRINT PILOTAGE -->
+        <div class="sprint-card">
+          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> PILOTAGE</h3>
+          <p class="sprint-subtitle">Rien ne se perd. Ni ce qui a été dit, ni ce qui doit être fait.</p>
+          <details class="sprint-details" open>
+            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
+            <div class="sprint-details-content">
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'entends</span>
+                <p class="sprint-douleur">« Les comptes-rendus de RDV sont bâclés. Des deals s'endorment sans qu'on s'en rende compte. Et je ne sais pas où mes commerciaux ont vraiment besoin de coaching. »</p>
+              </div>
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'installe</span>
+                <div class="sprint-livrable">
+                  <p>Après chaque rendez-vous, vos commerciaux reçoivent compte-rendu, email de suivi pré-rédigé, mise à jour CRM proposée.</p>
+                  <p>Et selon vos priorités, on va plus loin : identification des deals qui s'endorment dans le pipeline, points de coaching factuels par commercial, analyse des objections récurrentes. On choisit ensemble ce qui a le plus d'impact pour votre équipe.</p>
+                </div>
+              </div>
+              <div class="sprint-roi">
+                <span class="sprint-roi-label">Résultat</span>
+                1 heure d'administratif économisée par commercial et par jour. Des managers qui pilotent sur des faits, plus sur l'intuition.
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- SPRINT SIMULATEUR -->
+        <div class="sprint-card">
+          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> SIMULATEUR</h3>
+          <p class="sprint-subtitle">Un coach de poche qui joue le prospect le plus dur, 24h/24.</p>
+          <details class="sprint-details" open>
+            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
+            <div class="sprint-details-content">
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'entends</span>
+                <p class="sprint-douleur">« Mes juniors découvrent les objections difficiles en face d'un vrai prospect. Ils se brûlent sur des comptes qu'on aurait pu closer. »</p>
+              </div>
+              <div class="sprint-block">
+                <span class="sprint-label">Ce que j'installe</span>
+                <div class="sprint-livrable">
+                  <p>Vos commerciaux s'entraînent sur un simulateur entraîné sur vos personas et votre pitch, autant de fois qu'ils veulent.</p>
+                  <p>On définit ensemble le scope : objections de prospection, closing difficile, relances, ou tout moment critique de votre cycle de vente. Le simulateur pousse jusqu'au point de rupture, puis débriefe.</p>
+                </div>
+              </div>
+              <div class="sprint-roi">
+                <span class="sprint-roi-label">Résultat</span>
+                Temps d'onboarding des nouveaux commerciaux réduit de moitié. Tout le monde vend comme votre meilleur commercial.
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <!-- Sur-mesure -->
+      <div class="sprint-surmesure">
+        <p>Un besoin vente spécifique qui ne rentre pas dans ces 4 Sprints ? J'installe aussi des agents IA et des workflows sur-mesure, sur la même méthode.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- UN BESOIN DIFFÉRENT ? -->
+  <section id="solutions" style="background: var(--surface-container-low);">
+    <div class="container">
+      <h2 style="text-align: center;">Un besoin différent ?</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Si vos priorités sont ailleurs — acculturer vos équipes, cadrer l'usage de l'IA, monter en compétence sur les outils — j'interviens aussi sur ces sujets.</p>
+
+      <div class="besoin-list">
+        <div class="besoin-item">
+          <h4><a href="https://casse-tete.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--primary);">Le Casse-Tête de l'IA Générative</a></h4>
+          <p>Atelier ludique et collaboratif sur le modèle de la Fresque du Climat pour comprendre l'IA générative, ses risques et ses bonnes pratiques. Pour embarquer vos équipes, toutes fonctions confondues.</p>
+        </div>
+
+        <div class="besoin-item">
+          <h4>Charte IA d'entreprise</h4>
+          <p>Le cadre qui permet à vos équipes d'utiliser l'IA en confiance : ce qui est autorisé, ce qui ne l'est pas, comment on s'en sert. Co-construite avec vous.</p>
+        </div>
+
+        <div class="besoin-item">
+          <h4>Formations et accompagnement sur les outils IA</h4>
+          <p>ChatGPT, Claude, Copilot, Mistral, NotebookLM. Des formations courtes sur vos cas d'usage réels, et un accompagnement pour vous aider à choisir les bons outils pour votre entreprise.</p>
+        </div>
+
+        <div class="besoin-item">
+          <h4>Coaching individuel</h4>
+          <p>Un accompagnement 1-to-1 pour les dirigeants et managers qui veulent monter en compétence personnellement sur l'IA appliquée à leur métier.</p>
+        </div>
+
+        <div class="besoin-item">
+          <h4>Un autre besoin ?</h4>
+          <p>Analyse de données, automatisation d'un process métier spécifique. Parlons-en.</p>
+        </div>
+      </div>
+
+      <!-- Bandeau logos outils IA -->
+      <div class="logos-bar" style="margin-top: 3rem; text-align: center;">
+        <img src="logos-outils-ia.png" alt="Outils IA : Copilot, ChatGPT, Claude, Gemini, Mistral, NotebookLM" loading="lazy" decoding="async" style="margin: 0 auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES CASSE-TÊTE + PHOTO ATELIER -->
+  <section style="background: var(--white);">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="text-align: center;">Le format Casse-Tête est éprouvé.</h2>
+      <p style="text-align: center; margin-bottom: 3rem;"><a href="https://casse-tete.org/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--primary);">Le Casse-Tête de l'IA Générative</a> est animé par 60+ formateurs certifiés en France et en Suisse. Voici ce qu'en disent les participants.</p>
+      <div class="testimonials">
+        <div class="testimonial">
+          « Un atelier qui réunit des profils aux visions totalement opposées de l'IA : des experts qui développent déjà avec, des débutants curieux, et des personnes inquiètes de se faire remplacer. »
+          <div class="author">Participant au Casse-Tête</div>
+        </div>
+        <div class="testimonial">
+          « Un outil visuel et collaboratif, accessible même sans bagage technique, avec une vision transparente des processus, des risques et des limites. »
+          <div class="author">Participant au Casse-Tête</div>
+        </div>
+        <div class="testimonial">
+          « Un excellent point de départ pour des discussions plus sereines, plus responsables, et plus lucides sur l'IA générative. »
+          <div class="author">Participant au Casse-Tête</div>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.6; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em;">
+        Formation conçue par l'Université de Genève / ISIT-CH <em style="font-style: italic; text-transform: none; letter-spacing: 0.05em; font-weight: 600;">Swiss Institute for Sustainable IT</em>
+      </p>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 2.5rem; margin-top: 1rem; opacity: 0.7;">
+        <img src="Universit%C3%A9_de_Gen%C3%A8ve_(logo).svg" alt="Université de Genève" style="height: 45px; width: auto;" loading="lazy" decoding="async">
+        <img src="logo-isit-ch.png" alt="ISIT-CH — Swiss Institute for Sustainable IT" style="height: 40px; width: auto;" loading="lazy" decoding="async">
+      </div>
+
+      <div class="photo-bandeau" style="margin-top: 3rem;">
+        <img src="atelier-casse-tete.png" alt="Atelier Casse-Tête de l'IA Générative — Université de Genève" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- AVANT / APRÈS -->
+  <section style="background: var(--white); border-top: 1px solid rgba(209,209,207,0.2);">
+    <div class="container">
+      <h2 style="text-align: center;">Ce que j'entends. Ce que je construis.</h2>
+      <div class="grid-2" style="gap: 1.5rem;">
+        <div class="ba-card avant">
+          <span class="ba-label">Avant</span>
+          <p style="font-style: italic; color: inherit;">« On me demande d'intégrer l'IA. Je ne sais pas par où commencer. »</p>
+        </div>
+        <div class="ba-card apres">
+          <span class="ba-label">Après</span>
+          <p style="color: inherit; font-size: 1.25rem;">Un plan d'action concret. On commence par ce qui a le plus d'impact.</p>
+        </div>
+
+        <div class="ba-card avant">
+          <span class="ba-label">Avant</span>
+          <p style="font-style: italic; color: inherit;">« Mes commerciaux passent leurs journées à préparer des appels et faire des comptes rendus, pas à vendre. »</p>
+        </div>
+        <div class="ba-card apres">
+          <span class="ba-label">Après</span>
+          <p style="color: inherit; font-size: 1.25rem;">Des systèmes sur mesure qui libèrent vos commerciaux du chronophage. Plus de temps pour vendre.</p>
+        </div>
+
+        <div class="ba-card avant">
+          <span class="ba-label">Avant</span>
+          <p style="font-style: italic; color: inherit;">« Je ne sais pas ce que mes équipes font avec nos données clients. »</p>
+        </div>
+        <div class="ba-card apres">
+          <span class="ba-label">Après</span>
+          <p style="color: inherit; font-size: 1.25rem;">Un cadre clair. Les bons outils, les bonnes règles. Le Shadow AI éliminé.</p>
+        </div>
+
+        <div class="ba-card avant">
+          <span class="ba-label">Avant</span>
+          <p style="font-style: italic; color: inherit;">« On a fait une formation. Deux semaines après, personne ne se souvient de rien. »</p>
+        </div>
+        <div class="ba-card apres">
+          <span class="ba-label">Après</span>
+          <p style="color: inherit; font-size: 1.25rem;">Des équipes formées sur leurs cas réels. Des outils adoptés, pas abandonnés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDGE NEWSLETTER -->
+  <section class="section-newsletter-bridge">
+    <div class="container">
+      <h2>Restez dans la boucle.</h2>
+      <p>Chaque mardi matin, 5 minutes pour transformer le bruit IA en décisions concrètes pour votre fonction commerciale. Un cas d'usage, une actu Sales Tech, un outil décodé.</p>
+      <a href="https://www.ventes-ia.fr" target="_blank" rel="noopener" class="btn-primary">S'abonner sur ventes-ia.fr</a>
+    </div>
+  </section>
+
+  <!-- LOCAL -->
+  <section class="section-warm">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <h2>Lyon · Grenoble · Annecy · Chambéry · Valence · Nord-Isère.</h2>
+      <p style="font-size: 1.25rem; font-weight: 400; opacity: 0.8; margin-bottom: 1.5rem;">Distanciel disponible sur toute la France.
+        Accompagnement de proximité en Rhône-Alpes.</p>
+      <p style="opacity: 0.6;">Événements : retrouvons-nous lors des prochaines soirées réseau ou salons locaux pour en
+        discuter.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section" id="contact">
+    <div class="container" style="max-width: 800px;">
+      <h2>Par où commencer ?</h2>
+      <p>Évaluez votre maturité IA et situez-vous dans votre secteur.<br><span
+          style="font-weight: 700; color: var(--charcoal);">10 questions · 2 minutes · Résultat immédiat.</span></p>
+      <div style="margin: 3rem 0;">
+        <a href="https://diagnostic.envolia.fr" class="btn-primary" style="font-size: 0.875rem; padding: 1.25rem 2.5rem;">Faire le diagnostic
+          gratuit</a>
+      </div>
+      <p style="font-size: 1rem; color: var(--on-surface-variant); font-weight: 500;">
+        Vous préférez en parler ? <a href="#rappel"
+          style="color: var(--primary); text-decoration: none; font-weight: 800;">Demandez à être rappelé →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- RAPPEL -->
+  <section class="form-section" id="rappel">
+    <div class="container" style="text-align: center; max-width: 700px;">
+      <h2 style="margin-bottom: 0.5rem;">Être rappelé</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">Laissez-moi vos coordonnées, je vous rappelle sous 24h ouvrées.</p>
+      <button type="button" class="btn-primary js-open-tally-rappel" style="font-size: 1rem; padding: 1.25rem 2.5rem;">Demander à être rappelé</button>
+      <p class="form-note" style="margin-top: 1.5rem;">Vos données ne sont utilisées que pour vous recontacter. Aucune transmission à des tiers.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p style="font-family: var(--font-display); font-size: 1.5rem; color: var(--white); margin-bottom: 1rem;">
+        Envolia.fr <span style="font-family: var(--font-body); font-size: 1rem; opacity: 0.5;">/ Trajectoire Ventes, Amélie Marrone</span></p>
+      <p style="margin-bottom: 2rem; font-size: 0.875rem;">Amélie Marrone · Lyon · Grenoble · Annecy · Chambéry · Distanciel France</p>
+      <div style="display: flex; gap: 2rem; justify-content: center; opacity: 0.6;">
+        <a href="https://linkedin.com/in/ameliemarrone" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/politique-de-confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tally popup integration — "Être rappelé" -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  <script>
+    // Fermer les sprint-details sur mobile au chargement
+    (function () {
+      if (window.innerWidth < 840) {
+        document.querySelectorAll('.sprint-details').forEach(function (d) {
+          d.removeAttribute('open');
+        });
+      }
+    })();
+
+    (function () {
+      var TALLY_RAPPEL_ID = 'ODJ7LR';
+      function openTallyRappel() {
+        if (window.Tally && typeof window.Tally.openPopup === 'function') {
+          window.Tally.openPopup(TALLY_RAPPEL_ID, {
+            layout: 'modal',
+            width: 520,
+            hideTitle: false,
+            autoClose: 2000
+          });
+        } else {
+          window.open('https://tally.so/r/' + TALLY_RAPPEL_ID, '_blank', 'noopener');
+        }
+      }
+      document.querySelectorAll('.js-open-tally-rappel').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          openTallyRappel();
+        });
+      });
+      // Also intercept all anchor links to #rappel to open popup instead
+      document.querySelectorAll('a[href="#rappel"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          openTallyRappel();
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
