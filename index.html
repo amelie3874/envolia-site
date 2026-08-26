@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Envolia — Mieux vendre avec l'IA, sans perdre l'humain</title>
+  <title>Envolia · Adopter l'IA sans partir dans tous les sens</title>
   <meta name="description"
-    content="J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage. 15 ans d'expertise sales B2B · Consultante IA · Lyon, Grenoble, Annecy · France.">
+    content="Sécuriser les usages de l'IA en interne, embarquer les équipes, puis appliquer l'IA à la prospection commerciale B2B. Atelier Casse-Tête de l'IA Générative et formation prospection. Lyon, Grenoble, Annecy, distanciel France.">
 
   <!-- SEO -->
   <link rel="canonical" href="https://envolia.fr/">
@@ -14,24 +14,25 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Envolia — Mieux vendre avec l'IA, sans perdre l'humain">
-  <meta property="og:description" content="J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage. 15 ans d'expertise sales B2B. Consultante IA. Lyon, Grenoble, Annecy.">
+  <meta property="og:title" content="Envolia · Adopter l'IA sans partir dans tous les sens">
+  <meta property="og:description" content="Sécuriser les usages de l'IA en interne, embarquer les équipes, puis l'appliquer à la prospection commerciale B2B.">
   <meta property="og:url" content="https://envolia.fr/">
   <meta property="og:site_name" content="Envolia">
   <meta property="og:image" content="https://envolia.fr/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Envolia — Mieux vendre avec l'IA, sans perdre l'humain">
+  <meta property="og:image:alt" content="Envolia · Mieux vendre avec l'IA, sans perdre l'humain">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Envolia — Mieux vendre avec l'IA, sans perdre l'humain">
-  <meta name="twitter:description" content="J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage. Consultante IA spécialisée ventes B2B.">
+  <meta name="twitter:title" content="Envolia · Adopter l'IA sans partir dans tous les sens">
+  <meta name="twitter:description" content="Sécuriser les usages de l'IA, embarquer les équipes, puis l'appliquer à la prospection commerciale B2B.">
   <meta name="twitter:image" content="https://envolia.fr/og-image.png">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" sizes="48x48">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Fonts -->
@@ -75,8 +76,8 @@
       --space-sm: 1rem;
       --space-md: 2rem;
       --space-lg: 4rem;
-      --space-xl: 6rem;
-      --space-xxl: 10rem;
+      --space-xl: 4.5rem;
+      --space-xxl: 6.5rem;
 
       /* Shadows */
       --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
@@ -130,7 +131,7 @@
 
     h2 {
       font-size: clamp(2.5rem, 5vw, 4rem);
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       color: var(--charcoal);
     }
 
@@ -292,7 +293,7 @@
 
     /* Hero */
     .hero {
-      padding: 12rem 0 8rem;
+      padding: 10rem 0 6rem;
       background: var(--navy);
       position: relative;
       overflow: hidden;
@@ -382,7 +383,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: var(--space-md);
-      margin-top: 3rem;
+      margin-top: 2.5rem;
     }
 
     @media (min-width: 640px) {
@@ -639,7 +640,7 @@
     /* Bandeau crédibilité hero */
     .cred-bandeau {
       background: var(--white);
-      padding: 4rem 0;
+      padding: 4.5rem 0;
       border-bottom: 1px solid rgba(209, 209, 207, 0.3);
     }
 
@@ -1156,13 +1157,190 @@
         text-align: center;
         gap: 1rem !important;
       }
-      .stat-hero span {
-        font-size: 5rem !important;
+      .stat-hero .stat-num {
+        font-size: 4.5rem !important;
       }
       .stat-hero h2 {
         text-align: center;
+        max-width: 100% !important;
       }
     }
+  
+    /* ============================================================
+       AJOUTS REFONTE 26/08/2026
+       ============================================================ */
+
+
+    .cred-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      color: var(--charcoal);
+      text-align: center;
+      margin-bottom: 0.5rem !important;
+      letter-spacing: -0.02em;
+    }
+
+    .cred-name {
+      text-align: center;
+      font-size: 0.7rem !important;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--primary);
+      margin-bottom: 2.5rem !important;
+    }
+
+    .cred-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: left;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 700px) { .cred-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1000px) { .cred-grid { grid-template-columns: repeat(4, 1fr); gap: 2.5rem; } }
+    .cred-item strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--charcoal);
+      line-height: 1.3;
+      margin-bottom: 0.35rem;
+    }
+    .cred-item span {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--on-surface-variant);
+      line-height: 1.5;
+    }
+    .cred-item a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+    .problem-grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-top: 2.5rem;
+      text-align: left;
+    }
+    @media (min-width: 900px) { .problem-grid-3 { grid-template-columns: repeat(3, 1fr); } }
+    .problem-grid-3 .problem-card h3 {
+      font-size: clamp(1.35rem, 2vw, 1.75rem);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--primary);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+    @media (min-width: 700px) { .stat-row { grid-template-columns: repeat(3, 1fr); } }
+    .stat-row .num {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 3.75rem);
+      color: var(--primary);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .stat-row p { font-size: 0.95rem; margin: 0; }
+
+    .stat-duo {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    @media (min-width: 700px) { .stat-duo { grid-template-columns: 1fr 1fr; } }
+    .stat-duo .num {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      color: var(--primary);
+      line-height: 0.9;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .pill-row { text-align: center; margin: 2.5rem 0; }
+    .pill {
+      display: inline-block;
+      border: 1px solid var(--outline);
+      border-radius: var(--radius-full);
+      padding: 0.6rem 1.25rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--charcoal);
+      margin: 0.3rem;
+      background: var(--white);
+    }
+
+    .photos-atelier {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    @media (min-width: 700px) { .photos-atelier { grid-template-columns: 1fr 1fr; } }
+    .photos-atelier img {
+      width: 100%;
+      height: 100%;
+      max-height: 340px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      display: block;
+    }
+
+    .formation-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-top: 2.5rem;
+      align-items: start;
+    }
+    @media (min-width: 900px) { .formation-grid { grid-template-columns: 1.4fr 1fr; gap: 3rem; } }
+
+    .fiche {
+      background: var(--white);
+      border: 1px solid var(--outline);
+      border-radius: var(--radius-sm);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-card);
+    }
+    .fiche dl { display: grid; gap: 1.5rem; margin: 0; }
+    .fiche dt {
+      font-size: 0.625rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+    }
+    .fiche dd { margin: 0; font-size: 0.95rem; font-weight: 500; color: var(--on-surface-variant); }
+    .fiche .fiche-note {
+      margin-top: 1.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--outline);
+      font-size: 0.85rem;
+      color: var(--on-surface-variant);
+    }
+
+    .capacites p { margin-bottom: 1.25rem; }
+    .capacites strong { color: var(--charcoal); }
   </style>
 </head>
 
@@ -1174,7 +1352,8 @@
       <a href="/" class="logo"><img src="logo-envolia-nav.png" alt="Envolia" style="height: 32px; width: auto; vertical-align: middle; margin-right: 0.5rem;">Envolia</a>
       <ul>
         <li><a href="#approche">Approche</a></li>
-        <li><a href="#sprints">Sprints</a></li>
+        <li><a href="#casse-tete">Casse-Tête</a></li>
+        <li><a href="#prospection">Prospection IA</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -1183,10 +1362,10 @@
   <!-- HERO -->
   <header class="hero">
     <div class="container">
-      <h1>Mieux vendre avec l'IA.<br><span>Sans perdre l'humain.</span></h1>
-      <p class="subtitle">J'installe chez vous les systèmes IA qui libèrent vos commerciaux du chronophage, pour qu'ils se concentrent sur ce qui fait vendre : parler à leurs clients.</p>
+      <h1>Adopter l'IA<br><span>sans partir dans tous les sens.</span></h1>
+      <p class="subtitle">Sécuriser les usages en interne, embarquer les équipes, puis appliquer l'IA là où elle fait gagner du temps et rapporte des clients.</p>
       <div class="cta-group">
-        <a href="#contact" class="btn-primary">Évaluer ma maturité IA en 2 min</a>
+        <a href="https://diagnostic.envolia.fr" class="btn-primary">Évaluer ma maturité IA en 2 min</a>
         <a href="#rappel" class="btn-secondary">Être rappelé</a>
       </div>
     </div>
@@ -1195,296 +1374,274 @@
   <!-- BANDEAU CRÉDIBILITÉ -->
   <section class="cred-bandeau">
     <div class="container">
-      <p>J'ai co-conçu <a href="https://www.alpesinnovation.fr/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PhonePlus CRM</a>, utilisé par <strong class="number">1 000+&nbsp;commerciaux</strong> au quotidien. <strong class="number">15&nbsp;ans</strong> à observer, mesurer et encoder ce qui fait vraiment vendre.</p>
-      <p class="cred-institutional">Formée à l'IA par un organisme certifié Qualiopi (184h) · Formée à l'usage sécurisé de l'IA</p>
+      <p class="cred-title">Qui est derrière Envolia ?</p>
+      <p class="cred-name">Amélie Marrone, consultante et formatrice IA.</p>
+      <div class="cred-grid">
+        <div class="cred-item">
+          <strong>Ingénieure, 15 ans en conseil prospection B2B</strong>
+          <span>Optimisation de process, d'abord en industrie, ensuite en vente.</span>
+        </div>
+        <div class="cred-item">
+          <strong>PhonePlus CRM</strong>
+          <span><a href="https://www.alpesinnovation.fr/" target="_blank" rel="noopener">Logiciel que j'ai co-conçu</a>, utilisé tous les jours par plus de 1 000 commerciaux.</span>
+        </div>
+        <div class="cred-item">
+          <strong>Démarchage éthique</strong>
+          <span><a href="https://www.demarchage-ethique.org/" target="_blank" rel="noopener">Association que j'ai fondée et présidée</a>, pour valoriser ceux qui prospectent proprement.</span>
+        </div>
+        <div class="cred-item">
+          <strong>Animatrice certifiée</strong>
+          <span><a href="https://casse-tete.org/" target="_blank" rel="noopener">Le Casse-Tête de l'IA Générative</a>, référente Nord-Isère.</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SHADOW AI COMMERCIAL -->
+  <!-- PROBLÈME -->
   <section class="section-alert">
-    <div class="container" style="text-align: center; max-width: 800px;">
-      <h2>Vos commerciaux utilisent déjà l'IA. Vos clients aussi.</h2>
-      <p class="text-h3" style="font-weight: 700; margin-bottom: 2rem;">75% des employés de bureau utilisent l'IA au travail. La plupart avec leurs propres outils, hors de tout contrôle.</p>
-      <p>Vos commerciaux écrivent leurs mails, préparent leurs rendez-vous, rédigent leurs comptes-rendus, relancent leurs prospects avec ChatGPT. Vos données clients, votre savoir-faire, votre image de marque partent dans des systèmes que vous ne maîtrisez pas.</p>
-      <p
-        style="font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.5; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;">
-        Source : Microsoft & LinkedIn 2024 Work Trend Index</p>
-    </div>
-  </section>
+    <div class="container">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h2>L'IA est arrivée dans votre entreprise avant vous.</h2>
+        <p style="font-size: 1.25rem;">Personne n'a décidé de commencer. Ça a commencé quand même.</p>
+      </div>
 
-  <!-- TWIST ACHETEUR -->
-  <section style="background: var(--white); padding-bottom: 3rem;">
-    <div class="container" style="max-width: 800px;">
-      <h2 style="text-align: center;">Et du côté de vos acheteurs, c'est exactement la même chose.</h2>
-      <p style="font-size: 1.25rem;">Vos prospects arrivent en rendez-vous après avoir comparé vos offres avec une IA. Ils ont préparé leurs objections avec une IA. Ils ont demandé à une IA si votre prix était dans le marché.</p>
-      <p style="font-size: 1.5rem; font-weight: 700; color: var(--charcoal); font-family: var(--font-display); line-height: 1.3; margin-top: 2rem;">Le commercial qui n'utilise pas l'IA n'est plus en retard sur son outil. Il est en retard sur son acheteur.</p>
-      <p style="font-size: 1.125rem; margin-top: 2rem; font-style: italic;">Vous ne pouvez plus dire « on n'a pas commencé ». Vous pouvez encore décider comment vous y allez.</p>
+      <div class="problem-grid-3">
+        <div class="problem-card">
+          <h3>« On sait qu'il faut s'y mettre. On ne sait pas par où commencer. »</h3>
+          <p>Le sujet est vaste, il bouge tous les mois, et chaque interlocuteur vous vend une entrée différente : un outil, un agent, une plateforme, une formation. Résultat : soit on lance dix chantiers en même temps, soit on ne lance rien.</p>
+        </div>
+        <div class="problem-card">
+          <h3>Vos équipes utilisent déjà l'IA. Sans cadre.</h3>
+          <p><strong>75 % des employés de bureau utilisent l'IA au travail. La plupart avec leurs propres outils, hors de tout contrôle.</strong></p>
+          <p style="margin-top: 1rem;">Ce qui sort de l'entreprise, vous ne le voyez pas. Ce qui en revient non plus : un contenu produit par une IA engage l'entreprise qui le publie, pas l'outil qui l'a écrit.</p>
+          <p style="font-size: 0.7rem; color: var(--on-surface-variant); opacity: 0.5; margin-top: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;">Source : Microsoft &amp; LinkedIn 2024 Work Trend Index</p>
+        </div>
+        <div class="problem-card">
+          <h3>« D'accord. Mais ça nous rapporte quoi, concrètement ? »</h3>
+          <p>Vous n'attendez pas une transformation à trois ans. Vous attendez du temps gagné, des équipes soulagées, et un effet visible sur le chiffre. En B2B, le premier terrain qui coche les trois, c'est la prospection commerciale. À condition de ne pas y aller en spammant votre marché.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- 80% D'ÉCHEC -->
-  <section class="section-problem" style="padding-top: 3rem; padding-bottom: 3rem;">
+  <section class="section-problem">
     <div class="container">
       <div class="stat-hero" style="display: flex; gap: 2rem; align-items: baseline; justify-content: center; margin-bottom: 3rem;">
-        <span
-          style="font-size: 8rem; font-family: var(--font-display); color: var(--primary); line-height: 0.9;">80%</span>
-        <h2 style="margin: 0; max-width: 400px; line-height: 1.1;">des projets IA échouent.<br><span
-            style="opacity:0.4;">Rarement à cause de la technologie. Essentiellement pour les deux mêmes raisons.</span></h2>
+        <span class="stat-num" style="font-size: 8rem; font-family: var(--font-display); color: var(--primary); line-height: 0.9;">80%</span>
+        <h2 style="margin: 0; max-width: 400px; line-height: 1.1;">des projets IA échouent.<br><span style="opacity:0.4;">Rarement à cause de la technologie. Essentiellement pour les deux mêmes raisons.</span></h2>
       </div>
 
       <div class="problem-grid">
         <div class="problem-card">
-          <h4
-            style="font-family: var(--font-body); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.75rem;">
+          <h4 style="font-family: var(--font-body); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.75rem;">
             <span class="material-symbols-outlined color-primary">groups</span> L'humain.</h4>
-          <p>On achète des licences sans accompagner le changement. Les équipes testent, sont déçues, et abandonnent.
-          </p>
+          <p>On achète des licences sans accompagner le changement. Les équipes testent, sont déçues, et abandonnent.</p>
         </div>
         <div class="problem-card">
-          <h4
-            style="font-family: var(--font-body); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.75rem;">
+          <h4 style="font-family: var(--font-body); font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--charcoal); display: flex; align-items: center; gap: 0.75rem;">
             <span class="material-symbols-outlined color-primary">account_tree</span> Le process.</h4>
-          <p>On plaque l'IA sur des process flous ou cassés. On automatise avant de structurer. L'IA amplifie le chaos
-            au lieu de le résoudre.</p>
+          <p>On plaque l'IA sur des process flous ou cassés. On automatise avant de savoir ce qu'on automatise. L'IA amplifie le désordre au lieu de le résoudre.</p>
         </div>
       </div>
 
-      <div
-        style="background: var(--navy); color: var(--white); padding: 3rem; border-radius: var(--radius-sm); margin-top: 3rem; text-align: center; box-shadow: var(--shadow-premium);">
-        <p style="color: var(--white); font-size: 1.25rem;">Pour 1€ investi dans la technologie IA, il en faudrait 9 en
-          accompagnement humain et en process. La plupart des entreprises font l'inverse.</p>
+      <div style="background: var(--navy); color: var(--white); padding: 3rem; border-radius: var(--radius-sm); margin-top: 3rem; text-align: center; box-shadow: var(--shadow-premium);">
+        <p style="color: var(--white); font-size: 1.25rem;">Pour 1 € investi dans la technologie IA, il en faudrait 9 en accompagnement humain et en process. La plupart des entreprises font l'inverse.</p>
       </div>
-      <p
-        style="font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.5; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; text-align: center;">
+      <p style="font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.5; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; text-align: center;">
         Sources : MIT Sloan Management Review, BCG 2024</p>
-      <p style="text-align: center; font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.5rem); color: var(--charcoal); margin-top: 4rem; font-weight: 400; letter-spacing: -0.02em;">C'est exactement là que j'interviens.</p>
     </div>
   </section>
 
   <!-- APPROCHE -->
-  <section id="approche" style="background: var(--surface-container-low); border-top: 1px solid rgba(209,209,207,0.2); padding-top: 3rem;">
+  <section id="approche" style="background: var(--surface-container-low); border-top: 1px solid rgba(209,209,207,0.2);">
     <div class="container">
-      <h2>15 ans à résoudre ces deux problématiques</h2>
-      <div style="column-count: 1; gap: 4rem; max-width: 800px;">
-        <p><strong>Le process :</strong> j'ai co-conçu <a href="https://www.alpesinnovation.fr/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PhonePlus CRM</a> en observant les meilleurs commerciaux de mes clients. Nous avons intégré leur process dans l'outil. Résultat : <strong>+30% de conversion</strong>, pas parce que l'outil est magique, mais parce que le process est bon.</p>
-        <p><strong>L'adoption :</strong> j'ai formé les équipes à l'utiliser. Soulager plutôt qu'alourdir. Y aller par petites touches.</p>
-        <p>Aujourd'hui, je fais la même chose avec l'IA : j'encode ma méthode dans des assistants configurés pour vos équipes, pour que l'adoption tienne et que le ROI suive.</p>
-        <p class="conviction">« D'abord l'humain,<br>ensuite le process,<br>enfin l'outil. »</p>
+      <h2 style="text-align: center;">Alors je prends le problème dans l'autre sens.</h2>
+
+      <div class="problem-grid-3">
+        <div class="problem-card">
+          <span class="step-num">01</span>
+          <h3>Y voir clair, ensemble.</h3>
+          <p>On part de ce que vos équipes font déjà, pas d'un catalogue d'outils. Tout le monde repart avec les mêmes repères, et on identifie ensemble les cas d'usage qui peuvent rapporter vite.</p>
+        </div>
+        <div class="problem-card">
+          <span class="step-num">02</span>
+          <h3>Sécuriser et embarquer.</h3>
+          <p>Des règles simples, comprises et appliquées : quels outils, quelles données, quels réflexes. Des bonnes pratiques qui vivent sur le terrain, pas un document que personne n'ouvre.</p>
+        </div>
+        <div class="problem-card">
+          <span class="step-num">03</span>
+          <h3>Appliquer là où le ROI est rapide et où ça soulage.</h3>
+          <p>On met l'IA au travail sur un cas d'usage mesurable. En B2B, c'est la prospection : mieux cibler, mieux préparer, gagner du temps, sans spammer le marché.</p>
+        </div>
       </div>
 
-      <!-- PROFIL -->
+      <p style="text-align: center; font-family: var(--font-display); font-size: clamp(1.75rem, 3vw, 2.5rem); color: var(--primary); margin-top: 3rem; font-style: italic; letter-spacing: -0.02em;">« D'abord l'humain, ensuite le process, enfin l'outil. »</p>
+    </div>
+  </section>
+
+  <!-- QUI JE SUIS -->
+  <section style="background: var(--white);">
+    <div class="container">
+      <h2 style="max-width: 900px;">L'IA est un nouvel outil. Les problèmes qu'elle pose ne le sont pas.</h2>
+
       <div class="profil">
-        <div class="profil-photo"><img src="amelie-marrone-envolia.jpg" alt="Amélie Marrone, consultante IA" loading="lazy" decoding="async"></div>
+        <div class="profil-photo"><img src="amelie-marrone-envolia.jpg" alt="Amélie Marrone, consultante et formatrice IA" loading="lazy" decoding="async"></div>
         <div>
-          <p class="text-caption color-primary" style="margin-bottom: 0.5rem;">Amélie Marrone, Consultante & formatrice IA · Auteure de la Newsletter <a href="https://www.ventes-ia.fr" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--primary);">"Mieux vendre avec l'IA, sans perdre l'humain"</a></p>
-          <p style="font-size: 1.125rem;">Je ne me suis pas lancée dans l'IA parce que c'est à la mode. Mais parce que j'ai vu arriver le même problème que j'ai résolu pendant 15 ans : comment faire qu'un outil soit réellement adopté et rentable. J'ai créé Envolia pour mettre cette expérience au service des entreprises, et leur éviter les pièges qui empêchent l'IA de produire de vrais résultats.</p>
+          <p style="font-size: 1.125rem;">Ingénieure de formation, j'ai passé ma carrière à optimiser des process : d'abord sur des lignes de production, puis quinze ans à conseiller des entreprises sur leur prospection téléphonique B2B. J'ai co-conçu <a href="https://www.alpesinnovation.fr/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">PhonePlus CRM</a>, utilisé tous les jours par plus de 1 000 commerciaux, et fondé l'association Démarchage éthique.</p>
+          <p style="font-size: 1.125rem;">L'adoption d'un outil par une équipe, l'automatisation qui ne tourne pas au spam, la protection des données clients : ce sont mes sujets depuis bien avant l'IA. J'ai créé Envolia pour mettre cette expérience au service des entreprises.</p>
+          <p class="text-caption color-primary" style="margin-top: 1.5rem;">Amélie Marrone, Consultante &amp; formatrice IA · Auteure de la Newsletter <a href="https://www.ventes-ia.fr" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--primary);">"Mieux vendre avec l'IA, sans perdre l'humain"</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LES 4 SPRINTS -->
-  <section id="sprints" class="section-sprints">
+  <!-- CHARNIÈRE -->
+  <section style="background: var(--surface-container-low); border-top: 1px solid rgba(209,209,207,0.2);">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <h2>Deux façons d'entrer dans le sujet.</h2>
+      <p style="font-size: 1.25rem;">Certaines entreprises commencent par le socle : comprendre, embarquer les équipes, sécuriser les usages. D'autres arrivent avec un besoin précis, la prospection commerciale, et on démarre par là.</p>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--charcoal); font-family: var(--font-display); line-height: 1.3; margin-top: 2rem;">Vous choisissez par où vous commencez.</p>
+    </div>
+  </section>
+
+  <!-- CASSE-TÊTE -->
+  <section id="casse-tete" style="background: var(--white);">
     <div class="container">
-      <div class="sprints-intro">
-        <p class="text-caption color-primary" style="margin-bottom: 1rem;">Ateliers d'implémentation de cas d'usage IA</p>
-        <h2>Les Sprints d'implémentation.<br><span style="font-family: var(--font-display); font-weight: 300; color: var(--on-surface-variant); font-size: 0.6em; letter-spacing: -0.01em;">Généralement sur 1 journée.</span></h2>
-        <p>Je crée avec vous un système IA sur mesure : assistant, agent ou workflow, configuré sur votre méthode et vos données.</p>
-        <p style="font-style: italic; color: var(--primary); font-family: var(--font-display); font-size: clamp(1.125rem, 2vw, 1.375rem);">Des assistants qui simplifient la vie de vos commerciaux, pas des robots qui les remplacent.</p>
-        <p>Mon rôle commence par vous aider à identifier par quoi on débute pour débloquer votre équipe.</p>
+      <div style="max-width: 800px;">
+        <p class="text-caption color-primary" style="margin-bottom: 1rem;">Atelier collaboratif</p>
+        <h2>Une règle réexpliquée n'est pas mieux appliquée.</h2>
+        <p style="font-size: 1.5rem; font-family: var(--font-display); color: var(--charcoal); line-height: 1.3; margin-bottom: 2rem;"><a href="https://casse-tete.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--primary);">Le Casse-Tête de l'IA Générative</a> : limiter le Shadow AI, faire vivre votre charte, embarquer vos équipes.</p>
+        <p style="font-size: 1.125rem;">Vous avez peut-être déjà posé un cadre. Une charte, des règles, une note de service. Et pourtant, dans les usages quotidiens, chacun continue à faire à sa manière.</p>
+        <p style="font-size: 1.125rem;">C'est un atelier collaboratif de deux heures, sans écran, construit sur le principe des fresques comme la Fresque du Climat. À partir d'un jeu de cartes, vos équipes reconstruisent de leurs mains le fonctionnement de l'IA générative, ses risques et les bons réflexes. Personne ne leur explique les règles. Elles les découvrent, et c'est pour ça qu'elles les appliquent.</p>
+        <p style="font-size: 1.125rem;">Enthousiastes, sceptiques, inquiets : tout le monde est autour de la même table. Le sujet cesse d'être conflictuel.</p>
       </div>
 
-      <div class="sprints-grid">
-
-        <!-- SPRINT SIGNAUX -->
-        <div class="sprint-card">
-          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> SIGNAUX</h3>
-          <p class="sprint-subtitle">Des comptes à activer chaque matin, pas des listes à éplucher chaque semaine.</p>
-          <details class="sprint-details" open>
-            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
-            <div class="sprint-details-content">
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'entends</span>
-                <p class="sprint-douleur">« Mes commerciaux prospectent dans le vide. Ils appellent des entreprises au hasard, au mauvais moment, avec le mauvais angle. »</p>
-              </div>
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'installe</span>
-                <div class="sprint-livrable">
-                  <p>Chaque matin, vos commerciaux reçoivent une short-list de comptes qui viennent de bouger. Chaque compte arrive avec le bon angle d'approche.</p>
-                  <p>On définit ensemble les signaux qui comptent pour votre entreprise : changements de direction, levées de fonds, ouvertures d'agence, ou tout signal propre à votre secteur.</p>
-                </div>
-              </div>
-              <div class="sprint-roi">
-                <span class="sprint-roi-label">Résultat</span>
-                Fin de la prospection dans le vide. Vos commerciaux appellent des entreprises qui ont une raison de vous répondre.
-              </div>
-            </div>
-          </details>
-        </div>
-
-        <!-- SPRINT CONTEXTE -->
-        <div class="sprint-card">
-          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> CONTEXTE</h3>
-          <p class="sprint-subtitle">Plus de recherche avant d'envoyer, d'appeler ou d'écrire. Vos commerciaux ouvrent la fiche et passent à l'action.</p>
-          <details class="sprint-details" open>
-            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
-            <div class="sprint-details-content">
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'entends</span>
-                <p class="sprint-douleur">« Mes commerciaux perdent 2 jours par semaine à faire des recherches sur leurs prospects. »</p>
-              </div>
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'installe</span>
-                <div class="sprint-livrable">
-                  <p>Un prospect à contacter ? On définit ensemble les informations à enrichir (actualités de l'entreprise, décideurs à cibler, signaux d'intérêt, angle d'approche…).</p>
-                  <p>Vos commerciaux obtiennent pour chaque prospect la note de contexte dont ils ont besoin pour agir.</p>
-                </div>
-              </div>
-              <div class="sprint-roi">
-                <span class="sprint-roi-label">Résultat</span>
-                15 minutes gagnées par contact. Vos commerciaux passent le temps récupéré à vendre.
-              </div>
-            </div>
-          </details>
-        </div>
-
-        <!-- SPRINT PILOTAGE -->
-        <div class="sprint-card">
-          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> PILOTAGE</h3>
-          <p class="sprint-subtitle">Rien ne se perd. Ni ce qui a été dit, ni ce qui doit être fait.</p>
-          <details class="sprint-details" open>
-            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
-            <div class="sprint-details-content">
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'entends</span>
-                <p class="sprint-douleur">« Les comptes-rendus de RDV sont bâclés. Des deals s'endorment sans qu'on s'en rende compte. Et je ne sais pas où mes commerciaux ont vraiment besoin de coaching. »</p>
-              </div>
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'installe</span>
-                <div class="sprint-livrable">
-                  <p>Après chaque rendez-vous, vos commerciaux reçoivent compte-rendu, email de suivi pré-rédigé, mise à jour CRM proposée.</p>
-                  <p>Et selon vos priorités, on va plus loin : identification des deals qui s'endorment dans le pipeline, points de coaching factuels par commercial, analyse des objections récurrentes. On choisit ensemble ce qui a le plus d'impact pour votre équipe.</p>
-                </div>
-              </div>
-              <div class="sprint-roi">
-                <span class="sprint-roi-label">Résultat</span>
-                1 heure d'administratif économisée par commercial et par jour. Des managers qui pilotent sur des faits, plus sur l'intuition.
-              </div>
-            </div>
-          </details>
-        </div>
-
-        <!-- SPRINT SIMULATEUR -->
-        <div class="sprint-card">
-          <h3 class="sprint-name"><span class="sprint-num">Sprint</span> SIMULATEUR</h3>
-          <p class="sprint-subtitle">Un coach de poche qui joue le prospect le plus dur, 24h/24.</p>
-          <details class="sprint-details" open>
-            <summary class="sprint-toggle">Voir le détail<span class="toggle-icon"></span></summary>
-            <div class="sprint-details-content">
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'entends</span>
-                <p class="sprint-douleur">« Mes juniors découvrent les objections difficiles en face d'un vrai prospect. Ils se brûlent sur des comptes qu'on aurait pu closer. »</p>
-              </div>
-              <div class="sprint-block">
-                <span class="sprint-label">Ce que j'installe</span>
-                <div class="sprint-livrable">
-                  <p>Vos commerciaux s'entraînent sur un simulateur entraîné sur vos personas et votre pitch, autant de fois qu'ils veulent.</p>
-                  <p>On définit ensemble le scope : objections de prospection, closing difficile, relances, ou tout moment critique de votre cycle de vente. Le simulateur pousse jusqu'au point de rupture, puis débriefe.</p>
-                </div>
-              </div>
-              <div class="sprint-roi">
-                <span class="sprint-roi-label">Résultat</span>
-                Temps d'onboarding des nouveaux commerciaux réduit de moitié. Tout le monde vend comme votre meilleur commercial.
-              </div>
-            </div>
-          </details>
-        </div>
-
+      <div class="stat-row">
+        <div><span class="num">1 000+</span><p>participants ont suivi l'atelier</p></div>
+        <div><span class="num">2 ans</span><p>d'affinage du format avant sa diffusion</p></div>
+        <div><span class="num">60+</span><p>animateurs certifiés en France et en Suisse</p></div>
       </div>
 
-      <!-- Sur-mesure -->
-      <div class="sprint-surmesure">
-        <p>Un besoin vente spécifique qui ne rentre pas dans ces 4 Sprints ? J'installe aussi des agents IA et des workflows sur-mesure, sur la même méthode.</p>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto;">Né au Bureau de la transformation de l'<a href="https://www.unige.ch/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Université de Genève</a>, déployé par le <a href="https://isit-ch.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Swiss Institute for Sustainable IT</a> et l'<a href="https://institutnr.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Institut du Numérique Responsable</a>.</p>
+
+      <div style="display: flex; align-items: center; justify-content: center; gap: 2.5rem; margin-top: 2rem; opacity: 0.7; flex-wrap: wrap;">
+        <a href="https://www.unige.ch/" target="_blank" rel="noopener" aria-label="Université de Genève"><img src="Universit%C3%A9_de_Gen%C3%A8ve_(logo).svg" alt="Université de Genève" style="height: 45px; width: auto; display: block;" loading="lazy" decoding="async"></a>
+        <a href="https://isit-ch.org/" target="_blank" rel="noopener" aria-label="Swiss Institute for Sustainable IT"><img src="logo-isit-ch.png" alt="ISIT-CH, Swiss Institute for Sustainable IT" style="height: 40px; width: auto; display: block;" loading="lazy" decoding="async"></a>
+      </div>
+
+      <div class="photos-atelier">
+        <img src="atelier-casse-tete-2.jpeg" alt="Participants autour de la fresque du Casse-Tête de l'IA Générative" loading="lazy" decoding="async">
+        <img src="atelier-casse-tete-3.jpg" alt="Atelier Casse-Tête de l'IA Générative en cours" loading="lazy" decoding="async">
+      </div>
+
+      <div style="max-width: 800px; margin: 4rem auto 0; text-align: center;">
+        <p class="text-caption" style="color: var(--on-surface-variant); margin-bottom: 1rem;">Résultats mesurés à l'issue de l'atelier</p>
+        <div class="stat-duo">
+          <div><span class="num">95 %</span><p style="font-size: 1.125rem;">des participants déclarent une meilleure compréhension des enjeux de l'IA.</p></div>
+          <div><span class="num">71 %</span><p style="font-size: 1.125rem;">souhaitent mettre en place de nouvelles bonnes pratiques.</p></div>
+        </div>
+      </div>
+
+      <div class="testimonials" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div class="testimonial">
+          « Un atelier qui réunit des profils aux visions totalement opposées de l'IA : des experts qui développent déjà avec, des débutants curieux, et des personnes inquiètes de se faire remplacer. »
+          <div class="author">Participant au Casse-Tête</div>
+        </div>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">2 heures</span><span class="pill">4 à 20 personnes</span><span class="pill">Sans écran</span><span class="pill">Présentiel ou distanciel</span>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <p>L'AI Act impose désormais aux entreprises de former leurs équipes aux usages de l'IA. L'atelier répond à cette obligation de montée en compétence.</p>
+        <div style="margin-top: 2.5rem;">
+          <a href="#rappel" class="btn-primary">Recevoir la présentation de l'atelier</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- UN BESOIN DIFFÉRENT ? -->
-  <section id="solutions" style="background: var(--surface-container-low);">
+  <!-- PROSPECTION -->
+  <section id="prospection" style="background: var(--surface-container-low); border-top: 1px solid rgba(209,209,207,0.2);">
     <div class="container">
-      <h2 style="text-align: center;">Un besoin différent ?</h2>
-      <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem;">Si vos priorités sont ailleurs — acculturer vos équipes, cadrer l'usage de l'IA, monter en compétence sur les outils — j'interviens aussi sur ces sujets.</p>
+      <div style="max-width: 800px;">
+        <p class="text-caption color-primary" style="margin-bottom: 1rem;">Formation</p>
+        <h2>Trouver des clients avec l'IA. Sans spammer votre marché.</h2>
+        <p style="font-size: 1.5rem; font-family: var(--font-display); color: var(--charcoal); line-height: 1.3; margin-bottom: 2rem;">Former vos commerciaux à prospecter avec l'IA. L'IA prépare, l'humain conclut.</p>
+        <p style="font-size: 1.125rem;">C'est le terrain où l'IA se rentabilise le plus vite. Vos commerciaux passent un temps considérable à chercher qui appeler, à comprendre à qui ils parlent, et à écrire des messages qui n'obtiennent pas de réponse. Tout ça, l'IA le raccourcit, à condition de savoir s'en servir.</p>
+      </div>
+
+      <div class="formation-grid">
+        <div class="capacites">
+          <h3 style="margin-bottom: 2rem;">Ce que vos commerciaux savent faire après</h3>
+          <p><strong>Cibler.</strong> Repérer les entreprises qui ont une raison de répondre maintenant, au lieu de dérouler une liste achetée.</p>
+          <p><strong>Comprendre avant d'appeler.</strong> Arriver au téléphone ou dans un mail avec le contexte réel du prospect : son actualité, ses enjeux, ses interlocuteurs.</p>
+          <p><strong>Personnaliser sans y passer la journée.</strong> Un message qui parle de lui, pas un publipostage déguisé.</p>
+          <p><strong>Garder la main.</strong> L'IA prépare, le commercial décide et signe. C'est lui qui reste au bout du fil.</p>
+        </div>
+
+        <div class="fiche">
+          <dl>
+            <div><dt>Durée</dt><dd>1 journée.</dd></div>
+            <div><dt>Format</dt><dd>Présentiel ou distanciel.</dd></div>
+            <div><dt>Public visé</dt><dd>Équipes commerciales B2B, directions commerciales, dirigeants qui prospectent eux-mêmes.</dd></div>
+            <div><dt>Prérequis</dt><dd>Aucune compétence technique. Un ordinateur et une connexion.</dd></div>
+            <div><dt>Financement</dt><dd>Possibilité de prise en charge avec Qualiopi.<!-- Logo Qualiopi à insérer ici une fois la règle d'affichage confirmée par l'organisme porteur : <img src="logo-qualiopi.png" alt="Qualiopi" style="height:48px;width:auto;margin-top:0.75rem;display:block;"> --></dd></div>
+          </dl>
+          <p class="fiche-note">Le programme détaillé est disponible sur demande.</p>
+        </div>
+      </div>
+
+      <div style="max-width: 800px; margin-top: 3rem;">
+        <h3 style="margin-bottom: 1.5rem;">Ce qu'on ne fera pas</h3>
+        <p style="font-size: 1.125rem;">Pas de séquences automatiques envoyées à 500 personnes. Pas de messages générés en masse.</p>
+        <p style="font-size: 1.125rem;">Et ce n'est pas une posture : vos acheteurs utilisent l'IA eux aussi. Ils reconnaissent un message généré en trois secondes. Une prospection à l'IA mal menée ne fait pas perdre du temps, elle abîme une image de marque que vous avez mis des années à construire.</p>
+      </div>
+
+      <div style="max-width: 800px; margin-top: 3rem;">
+        <h3 style="margin-bottom: 1.5rem;">On mesure</h3>
+        <p style="font-size: 1.125rem;">Avant de commencer, on choisit ensemble deux ou trois indicateurs et on note le point de départ : temps de préparation par prospect, taux de réponse, nombre de rendez-vous obtenus. Sans point de départ, il n'y a pas de résultat, juste une impression.</p>
+        <div style="margin-top: 2.5rem;">
+          <a href="#rappel" class="btn-primary">Parler de ma prospection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTRES PRESTATIONS -->
+  <section id="solutions" style="background: var(--white);">
+    <div class="container">
+      <h2 style="text-align: center;">D'autres façons de travailler ensemble.</h2>
 
       <div class="besoin-list">
         <div class="besoin-item">
-          <h4><a href="https://casse-tete.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--primary);">Le Casse-Tête de l'IA Générative</a></h4>
-          <p>Atelier ludique et collaboratif sur le modèle de la Fresque du Climat pour comprendre l'IA générative, ses risques et ses bonnes pratiques. Pour embarquer vos équipes, toutes fonctions confondues.</p>
+          <h4>Les Sprints d'implémentation</h4>
+          <p>Une journée pour installer un système IA configuré sur votre méthode : détection de signaux d'achat, notes de contexte avant rendez-vous, comptes-rendus et suivi de pipeline, entraînement aux objections.</p>
         </div>
-
         <div class="besoin-item">
-          <h4>Charte IA d'entreprise</h4>
-          <p>Le cadre qui permet à vos équipes d'utiliser l'IA en confiance : ce qui est autorisé, ce qui ne l'est pas, comment on s'en sert. Co-construite avec vous.</p>
+          <h4>Formations outils</h4>
+          <p>ChatGPT, Claude, Copilot, Mistral, NotebookLM. Formats courts, sur vos cas d'usage réels.</p>
         </div>
-
-        <div class="besoin-item">
-          <h4>Formations et accompagnement sur les outils IA</h4>
-          <p>ChatGPT, Claude, Copilot, Mistral, NotebookLM. Des formations courtes sur vos cas d'usage réels, et un accompagnement pour vous aider à choisir les bons outils pour votre entreprise.</p>
-        </div>
-
         <div class="besoin-item">
           <h4>Coaching individuel</h4>
-          <p>Un accompagnement 1-to-1 pour les dirigeants et managers qui veulent monter en compétence personnellement sur l'IA appliquée à leur métier.</p>
+          <p>Pour les dirigeants et managers qui veulent monter en compétence sur l'IA appliquée à leur métier.</p>
         </div>
-
         <div class="besoin-item">
           <h4>Un autre besoin ?</h4>
-          <p>Analyse de données, automatisation d'un process métier spécifique. Parlons-en.</p>
+          <p>Analyse de données, automatisation d'un process métier spécifique. Dites-le moi, on en parle.</p>
         </div>
       </div>
 
-      <!-- Bandeau logos outils IA -->
       <div class="logos-bar" style="margin-top: 3rem; text-align: center;">
         <img src="logos-outils-ia.png" alt="Outils IA : Copilot, ChatGPT, Claude, Gemini, Mistral, NotebookLM" loading="lazy" decoding="async" style="margin: 0 auto;">
       </div>
     </div>
   </section>
 
-  <!-- TÉMOIGNAGES CASSE-TÊTE + PHOTO ATELIER -->
-  <section style="background: var(--white);">
-    <div class="container" style="max-width: 800px;">
-      <h2 style="text-align: center;">Le format Casse-Tête est éprouvé.</h2>
-      <p style="text-align: center; margin-bottom: 3rem;"><a href="https://casse-tete.org/" target="_blank" rel="noopener" style="color: var(--primary); text-decoration: none; border-bottom: 1px solid var(--primary);">Le Casse-Tête de l'IA Générative</a> est animé par 60+ formateurs certifiés en France et en Suisse. Voici ce qu'en disent les participants.</p>
-      <div class="testimonials">
-        <div class="testimonial">
-          « Un atelier qui réunit des profils aux visions totalement opposées de l'IA : des experts qui développent déjà avec, des débutants curieux, et des personnes inquiètes de se faire remplacer. »
-          <div class="author">Participant au Casse-Tête</div>
-        </div>
-        <div class="testimonial">
-          « Un outil visuel et collaboratif, accessible même sans bagage technique, avec une vision transparente des processus, des risques et des limites. »
-          <div class="author">Participant au Casse-Tête</div>
-        </div>
-        <div class="testimonial">
-          « Un excellent point de départ pour des discussions plus sereines, plus responsables, et plus lucides sur l'IA générative. »
-          <div class="author">Participant au Casse-Tête</div>
-        </div>
-      </div>
-
-      <p style="text-align: center; font-size: 0.75rem; color: var(--on-surface-variant); opacity: 0.6; margin-top: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em;">
-        Formation conçue par l'Université de Genève / ISIT-CH <em style="font-style: italic; text-transform: none; letter-spacing: 0.05em; font-weight: 600;">Swiss Institute for Sustainable IT</em>
-      </p>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 2.5rem; margin-top: 1rem; opacity: 0.7;">
-        <img src="Universit%C3%A9_de_Gen%C3%A8ve_(logo).svg" alt="Université de Genève" style="height: 45px; width: auto;" loading="lazy" decoding="async">
-        <img src="logo-isit-ch.png" alt="ISIT-CH — Swiss Institute for Sustainable IT" style="height: 40px; width: auto;" loading="lazy" decoding="async">
-      </div>
-
-      <div class="photo-bandeau" style="margin-top: 3rem;">
-        <img src="atelier-casse-tete.png" alt="Atelier Casse-Tête de l'IA Générative — Université de Genève" loading="lazy" decoding="async">
-      </div>
-    </div>
-  </section>
-
   <!-- AVANT / APRÈS -->
-  <section style="background: var(--white); border-top: 1px solid rgba(209,209,207,0.2);">
+  <section style="background: var(--surface-container-low); border-top: 1px solid rgba(209,209,207,0.2);">
     <div class="container">
       <h2 style="text-align: center;">Ce que j'entends. Ce que je construis.</h2>
       <div class="grid-2" style="gap: 1.5rem;">
@@ -1494,16 +1651,7 @@
         </div>
         <div class="ba-card apres">
           <span class="ba-label">Après</span>
-          <p style="color: inherit; font-size: 1.25rem;">Un plan d'action concret. On commence par ce qui a le plus d'impact.</p>
-        </div>
-
-        <div class="ba-card avant">
-          <span class="ba-label">Avant</span>
-          <p style="font-style: italic; color: inherit;">« Mes commerciaux passent leurs journées à préparer des appels et faire des comptes rendus, pas à vendre. »</p>
-        </div>
-        <div class="ba-card apres">
-          <span class="ba-label">Après</span>
-          <p style="color: inherit; font-size: 1.25rem;">Des systèmes sur mesure qui libèrent vos commerciaux du chronophage. Plus de temps pour vendre.</p>
+          <p style="color: inherit; font-size: 1.25rem;">Un chemin clair. On commence par ce qui a le plus d'impact.</p>
         </div>
 
         <div class="ba-card avant">
@@ -1512,16 +1660,34 @@
         </div>
         <div class="ba-card apres">
           <span class="ba-label">Après</span>
-          <p style="color: inherit; font-size: 1.25rem;">Un cadre clair. Les bons outils, les bonnes règles. Le Shadow AI éliminé.</p>
+          <p style="color: inherit; font-size: 1.25rem;">Un cadre compris et appliqué. Le Shadow AI recule.</p>
         </div>
 
         <div class="ba-card avant">
           <span class="ba-label">Avant</span>
-          <p style="font-style: italic; color: inherit;">« On a fait une formation. Deux semaines après, personne ne se souvient de rien. »</p>
+          <p style="font-style: italic; color: inherit;">« On a fait une formation. Deux semaines après, plus personne ne s'en sert. »</p>
         </div>
         <div class="ba-card apres">
           <span class="ba-label">Après</span>
-          <p style="color: inherit; font-size: 1.25rem;">Des équipes formées sur leurs cas réels. Des outils adoptés, pas abandonnés.</p>
+          <p style="color: inherit; font-size: 1.25rem;">Des équipes qui ont construit elles-mêmes leurs réflexes, et qui les gardent.</p>
+        </div>
+
+        <div class="ba-card avant">
+          <span class="ba-label">Avant</span>
+          <p style="font-style: italic; color: inherit;">« Mes commerciaux passent leurs journées à chercher qui appeler et quoi leur dire. »</p>
+        </div>
+        <div class="ba-card apres">
+          <span class="ba-label">Après</span>
+          <p style="color: inherit; font-size: 1.25rem;">Des commerciaux qui savent qui appeler, pourquoi maintenant, et avec quel angle.</p>
+        </div>
+
+        <div class="ba-card avant">
+          <span class="ba-label">Avant</span>
+          <p style="font-style: italic; color: inherit;">« On veut utiliser l'IA en prospection, mais je ne veux pas devenir un spammeur. »</p>
+        </div>
+        <div class="ba-card apres">
+          <span class="ba-label">Après</span>
+          <p style="color: inherit; font-size: 1.25rem;">Une prospection plus rapide et plus pertinente, sans abîmer votre image.</p>
         </div>
       </div>
     </div>
@@ -1540,10 +1706,8 @@
   <section class="section-warm">
     <div class="container" style="text-align: center; max-width: 800px;">
       <h2>Lyon · Grenoble · Annecy · Chambéry · Valence · Nord-Isère.</h2>
-      <p style="font-size: 1.25rem; font-weight: 400; opacity: 0.8; margin-bottom: 1.5rem;">Distanciel disponible sur toute la France.
-        Accompagnement de proximité en Rhône-Alpes.</p>
-      <p style="opacity: 0.6;">Événements : retrouvons-nous lors des prochaines soirées réseau ou salons locaux pour en
-        discuter.</p>
+      <p style="font-size: 1.25rem; font-weight: 400; opacity: 0.8; margin-bottom: 1.5rem;">Distanciel disponible sur toute la France. Accompagnement de proximité en Rhône-Alpes.</p>
+      <p style="opacity: 0.6;">Événements : retrouvons-nous lors des prochaines soirées réseau ou salons locaux pour en discuter.</p>
     </div>
   </section>
 
@@ -1551,15 +1715,12 @@
   <section class="cta-section" id="contact">
     <div class="container" style="max-width: 800px;">
       <h2>Par où commencer ?</h2>
-      <p>Évaluez votre maturité IA et situez-vous dans votre secteur.<br><span
-          style="font-weight: 700; color: var(--charcoal);">10 questions · 2 minutes · Résultat immédiat.</span></p>
-      <div style="margin: 3rem 0;">
-        <a href="https://diagnostic.envolia.fr" class="btn-primary" style="font-size: 0.875rem; padding: 1.25rem 2.5rem;">Faire le diagnostic
-          gratuit</a>
+      <p>Évaluez votre maturité IA et situez-vous dans votre secteur.<br><span style="font-weight: 700; color: var(--charcoal);">10 questions · 2 minutes · Résultat immédiat.</span></p>
+      <div style="margin: 2.5rem 0;">
+        <a href="https://diagnostic.envolia.fr" class="btn-primary" style="font-size: 0.875rem; padding: 1.25rem 2.5rem;">Faire le diagnostic gratuit</a>
       </div>
       <p style="font-size: 1rem; color: var(--on-surface-variant); font-weight: 500;">
-        Vous préférez en parler ? <a href="#rappel"
-          style="color: var(--primary); text-decoration: none; font-weight: 800;">Demandez à être rappelé →</a>
+        Vous préférez en parler ? <a href="#rappel" style="color: var(--primary); text-decoration: none; font-weight: 800;">Demandez à être rappelé →</a>
       </p>
     </div>
   </section>
@@ -1568,7 +1729,7 @@
   <section class="form-section" id="rappel">
     <div class="container" style="text-align: center; max-width: 700px;">
       <h2 style="margin-bottom: 0.5rem;">Être rappelé</h2>
-      <p style="font-size: 1.125rem; margin-bottom: 2rem;">Laissez-moi vos coordonnées, je vous rappelle sous 24h ouvrées.</p>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">Laissez-moi vos coordonnées, je vous rappelle sous 24h ouvrées. Si vous venez pour l'atelier Casse-Tête, je vous envoie aussi la présentation complète.</p>
       <button type="button" class="btn-primary js-open-tally-rappel" style="font-size: 1rem; padding: 1.25rem 2.5rem;">Demander à être rappelé</button>
       <p class="form-note" style="margin-top: 1.5rem;">Vos données ne sont utilisées que pour vous recontacter. Aucune transmission à des tiers.</p>
     </div>
