@@ -4,8 +4,37 @@
 <!--
   ================================================================
   envolia.fr · page d'accueil
-  VERSION EN VIGUEUR : v13, 7 septembre 2026 (troisieme passe)
-  Version precedente : v12, 7 septembre 2026 (REMPLACEE)
+  VERSION EN VIGUEUR : v14, 7 septembre 2026 (metadonnees de partage)
+  Version precedente : v13, 7 septembre 2026 (REMPLACEE)
+    conservee dans LIVRABLES/Envolia-Archives/index_v13_070926.html
+  ----------------------------------------------------------------
+  Journal des modifications v13 -> v14 (07/09/2026)
+  Objet : les metadonnees Open Graph et Twitter restaient orientees
+  prospection commerciale alors que la page a ete ouverte en v11.
+  N.  og:description : la fin "appliquer l'IA a la prospection commerciale
+      B2B." REMPLACEE par "et installer l'IA la ou elle fait gagner du
+      temps."
+  O.  twitter:description : "Securiser les usages de l'IA, embarquer les
+      equipes, puis l'appliquer a la prospection commerciale B2B."
+      REMPLACEE par "...puis l'installer la ou elle fait gagner du temps.
+      Formations eligibles OPCO."
+  P.  og:image:alt : "Envolia · Mieux vendre avec l'IA, sans perdre
+      l'humain" REMPLACE par le texte reel de la nouvelle image.
+  Q.  Nouvelle image de partage og-image-v2.png (1200x630). L'ancienne
+      og-image.png contenait trois defauts : apostrophes manquantes
+      ("Integrez l IA", "Sans perdre l humain"), accent manquant sur
+      "Integrez", et une offre obsolete ("Audit · Formation ·
+      Accompagnement IA pour PME"). Nouveau texte : "Envolia / Adoptez
+      l'IA. Sans partir dans tous les sens. / Formations IA pour les PME ·
+      Eligible OPCO."
+      NOM DE FICHIER DIFFERENT A DESSEIN : vercel.json applique
+      "Cache-Control: max-age=31536000, immutable" aux png, donc un fichier
+      remplace sous le meme nom aurait continue de servir l'ancienne image
+      pendant un an. og-image.png est conservee dans le dossier, sans etre
+      referencee, pour ne pas casser les cartes de partage deja publiees
+      qui pointent vers son URL.
+  ----------------------------------------------------------------
+  Version anterieure : v12, 7 septembre 2026 (REMPLACEE)
     conservee dans LIVRABLES/Envolia-Archives/index_v12_070926.html
   ----------------------------------------------------------------
   Journal des modifications v12 -> v13 (07/09/2026)
@@ -146,19 +175,19 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Envolia · Adopter l'IA sans partir dans tous les sens">
-  <meta property="og:description" content="Formations IA pour les entreprises, éligibles OPCO en portage Qualiopi : sécuriser les usages en interne, embarquer les équipes, appliquer l'IA à la prospection commerciale B2B.">
+  <meta property="og:description" content="Formations IA pour les entreprises, éligibles OPCO en portage Qualiopi : sécuriser les usages en interne, embarquer les équipes, et installer l'IA là où elle fait gagner du temps.">
   <meta property="og:url" content="https://envolia.fr/">
   <meta property="og:site_name" content="Envolia">
-  <meta property="og:image" content="https://envolia.fr/og-image.png">
+  <meta property="og:image" content="https://envolia.fr/og-image-v2.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Envolia · Mieux vendre avec l'IA, sans perdre l'humain">
+  <meta property="og:image:alt" content="Envolia · Adoptez l'IA sans partir dans tous les sens. Formations IA pour les PME, éligible OPCO.">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Envolia · Adopter l'IA sans partir dans tous les sens">
-  <meta name="twitter:description" content="Sécuriser les usages de l'IA, embarquer les équipes, puis l'appliquer à la prospection commerciale B2B.">
-  <meta name="twitter:image" content="https://envolia.fr/og-image.png">
+  <meta name="twitter:description" content="Sécuriser les usages de l'IA, embarquer les équipes, puis l'installer là où elle fait gagner du temps. Formations éligibles OPCO.">
+  <meta name="twitter:image" content="https://envolia.fr/og-image-v2.png">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" sizes="48x48">
